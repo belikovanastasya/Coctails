@@ -1,0 +1,497 @@
+@font-face {
+    font-family: 'bebas-neue-reg';
+    src: url('../fonts/bebas_neue_regular.eot');
+    src: local('☺'), url('../fonts/bebas_neue_regular.woff') format('woff'), url('fonts/bebas_neue_regular.ttf') format('truetype'), url('fonts/bebas_neue_regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirNextLTPro-R';
+    src: url('../fonts/AvenirNextLTPro-Regular.eot');
+    src: local('☺'), url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'), url('fonts/AvenirNextLTPro-Regular.ttf') format('truetype'), url('fonts/AvenirNextLTPro-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+    @font-face {
+            font-family: "MyriadProRegular";
+            src: url("../fonts/MyriadProRegular.eot");
+            src: url("../fonts/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+            url("../fonts/MyriadProRegular.woff") format("woff"),
+            url("../fonts/MyriadProRegular.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+    }
+
+
+
+$mainfont: Cambria, suns-serif;
+$maincolor: #e3e3e3;
+$hovercolor:#e52d44;
+$globalfont: bebas-neue-reg, suns-serif;
+$numbersfont: AvenirNextLTPro-R, suns-serif;
+
+.block-style{
+    width: 1090px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    top: 0; 
+}
+
+
+ html, body{
+    height: 100%;
+    /* overflow: hidden; */
+
+} 
+.section{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+   padding-right: 15px;
+   padding-left: 15px;
+
+}
+header {
+    height: 90px;
+}
+.logo{
+    width: 170px;
+    height: 50px;
+    float: left;
+    margin-left: 20px;
+
+}
+.menu{
+    width: 60px;
+    height: 60px;
+    float: right;
+    position: relative;
+
+    
+    span{
+        display: block;
+        font-family: $mainfont;
+        text-transform: uppercase;
+        font-size: 14px;
+        position: absolute;
+        left: -60px;
+        top: 25px;
+
+
+    }
+}
+.btn-menu{
+    width: 60px;
+    height: 60px;
+    border: 1px solid $maincolor;
+    border-radius: 60px;
+    display: inline-block;
+    position: relative;
+    a{
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 12px;
+
+
+    }
+
+}
+.btn-menu:after{
+    content: '';
+    border-left: 1px solid $maincolor;
+    position: absolute;
+    width: 3px;
+    height: 270px;
+    top: 60px;
+    right: 27px;
+}
+nav:after{
+    content: '';
+    border-left: 1px solid $maincolor;
+    position: absolute;
+    width: 3px;
+    height: 270px;
+    top: 160px;
+    right: 27px; 
+}
+header:after{
+    content: '';
+    border-left: 1px solid $maincolor;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0px;
+    right: 250px;
+    
+}
+.two:after{
+    content: '';
+    border-left: 1px solid $maincolor;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 30px;
+    right: 490px;
+   
+}
+ .one:after{
+    content: '';
+    border-left: 1px solid $maincolor;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0px;
+    right: 720px;
+   
+} 
+ .zero:after{
+    content: '';
+    border-left: 1px solid $maincolor;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0px;
+    right: 960px;
+    
+} 
+.container{
+    position: relative;
+.block-main{
+    @extend .block-style;
+    display: none;
+    h1{
+        font-family: $globalfont;
+        font-size: 50px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: block;
+        position: absolute;
+        left: 65px;
+        top: 264px;
+        z-index: 10; 
+
+    }
+    .btns{
+        width: 375px;
+        height: 60px;
+        position: absolute;
+        left: 65px;
+        bottom: 50px;
+        :hover{
+                background:$hovercolor;
+                color: #ffffff;
+            }
+
+        a{  
+            display: inline-block;
+            width: 168px;
+            height: 22px;
+            border: 1px solid black;
+            text-decoration: none;
+            color: #010101;
+            text-transform: uppercase;
+            font-family: $globalfont;
+            font-size: 14px;
+            padding-top: 10px;
+            text-align: center;
+            margin-left: 10px;
+
+        }
+        a:first-child{
+                margin-left: 0;
+            };
+    } 
+    .block-main-photo{
+        position: absolute;
+        right: 100px;
+        bottom: 30px;
+    }
+
+   
+}
+.block-about{
+    @extend .block-style;
+    height: 700px;
+    display: none;
+    .block-about-photo-2{
+        position: absolute;
+        top: 0;
+        left: -15px;
+        z-index: 100;
+
+
+    }
+    h2{
+        font-family:$globalfont;
+        font-size: 26px;
+        font-weight: normal;
+        word-spacing: 2px;
+    }
+    ul{
+        list-style: square;
+    }
+    li{
+        color: $hovercolor;
+        span{
+            color: black;
+            font-family: MyriadProRegular, suns-serif;
+            font-size: 14px;
+        }
+    }
+   
+    .content-offer{
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        left: 414px;
+        p{
+            margin-left: 20px;
+            font-family:MyriadProRegular, suns-serif;
+            font-size: 12px;
+        }
+
+        h2{
+            font-size: 36px;
+        }
+
+    }
+    .content-goals{
+        width: 370px;
+        height: 250px;
+        position: absolute;
+        top: 310px;
+        left: 17px;
+       
+    }
+    .block-about-photo-3{
+        position: absolute;
+        left:556px;
+        bottom: 225px;
+    }
+
+    .content-about{
+        width: 530px;
+        height: 200px;
+        position: absolute;
+        bottom: 0;
+        left: 556px;
+    }
+
+   .line-wrap span{
+      display: block;
+    background:  $hovercolor;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  z-index: -10;
+
+   } 
+   .line-wrap span:nth-of-type(1){ 
+  width: 0%; height: 1px; top: 32px; left: 32px;   
+  
+}
+.line-wrap span:nth-of-type(2){ 
+  width: 1px; height: 0%; top: 32px; right: -32px; 
+  
+}
+.line-wrap span:nth-of-type(3){ 
+  width: 0%; height: 1px; bottom: -32px; right: -32px;  
+ 
+}
+.line-wrap span:nth-of-type(4){ 
+  width: 1px; height: 0%; bottom: -32px; left: 32px; 
+  
+}
+
+
+}
+.block-benefit{
+    @extend .block-style;
+    background: black;
+    display: none;
+
+}
+.block-reasons{
+    @extend .block-style;
+    background: purple;
+    display: none;
+
+}
+.block-parts{
+    @extend .block-style;
+    background: yellow;
+    display: none;
+
+}
+.block-parts{
+    @extend .block-style;
+    background: green;
+    display: none;
+
+}
+.block-contacts{
+    @extend .block-style;
+    background: brown;
+    display: none;
+
+}
+}
+
+.show {
+    display: block !important;
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+nav{
+    width: 90px;
+    position: absolute;
+    right: -5px;
+    top: 250px;
+
+     tr td{
+       text-align: center;
+       a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $globalfont;
+        font-size: 12px;
+        color: black;
+
+       }   
+   } 
+
+    tr td:first-child{
+        visibility: hidden;
+    }
+    
+
+}
+
+tr:hover td:first-child {
+      
+        visibility: visible;
+    
+}
+tr:hover td:nth-child(2) a{
+        font-size: 34px;
+        font-family:$numbersfont;
+    }
+
+
+.active{
+    td:first-child a{
+        visibility:visible;
+    };
+    td:nth-child(2) a{
+        font-size: 34px;
+        font-family:$numbersfont;
+    }
+}
+
+
+
+.block-about {
+    
+}
+
+
+
+
+
+
+ footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    .info{
+        width: 260px;
+        float: left;
+             span{
+        font-family:$mainfont;
+        font-size: 12px;
+        word-spacing: normal;
+        span{
+            margin-left: 15px;
+        }
+    }
+}
+    .scroll{
+         width: 90px;
+         float: left;
+         -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+         margin-left: 280px; 
+
+     a {
+        text-decoration: none;
+        color: black;
+        font-family: $mainfont;
+        font-weight: bold;
+    }
+}
+
+    .networks{
+        width: 315px;
+        height: 33px;
+        border: 1px solid $maincolor;
+        float: right;
+        margin-right: 43px;
+        background: white;
+        ul{
+           padding-left: 0;
+           margin: 6px 16px;
+
+
+           li{
+            display: inline-block;
+            margin-left: 15px;
+
+            
+            a{
+                font-family: $mainfont;
+                font-size: 11px;
+                font-weight: bold;
+                text-decoration: none;
+                color: black;
+                word-spacing: normal;
+            }
+        }  
+    }
+       
+    }
+} 
+
+.networks ul li:first-child{
+    margin-left: 0;
+    a{
+        color: $maincolor;
+    }
+}
+
+
