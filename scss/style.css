@@ -25,8 +25,8 @@
   top: 0; }
 
 html, body {
-  height: 100%
-  /* overflow: hidden; */ }
+  height: 100%;
+  overflow-y: hidden; }
 
 .section {
   width: 100%;
@@ -85,14 +85,14 @@ header {
   top: 60px;
   right: 27px; }
 
-nav:after {
+.four:after {
   content: '';
   border-left: 1px solid #e3e3e3;
   position: absolute;
   width: 3px;
-  height: 270px;
-  top: 160px;
-  right: 27px; }
+  height: 100%;
+  top: 500px;
+  right: 40px; }
 
 header:after {
   content: '';
@@ -279,7 +279,7 @@ header:after {
 nav {
   width: 90px;
   position: absolute;
-  right: -5px;
+  right: 0px;
   top: 250px; }
   nav tr td {
     text-align: center; }
@@ -310,7 +310,8 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100px; }
+  height: 100px;
+  padding-top: 20px; }
   footer .info {
     width: 260px;
     float: left; }
