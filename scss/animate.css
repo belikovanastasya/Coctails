@@ -4,17 +4,13 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
   }
-
   to {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
   }
 }
 
@@ -23,90 +19,132 @@
   animation-name: fadeInDown;
 }
 
-@-webkit-keyframes fadeInDownBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -2000px, 0);
-    transform: translate3d(0, -2000px, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+.animated-border-top {
+  animation-delay: .22s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 
-@keyframes fadeInDownBig {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -2000px, 0);
-    transform: translate3d(0, -2000px, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+.animated-border-right {
+  animation-delay: .23s;
+  animation-duration: .25s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 
-
-.animated-border-top{
-animation-delay: 1s;
-animation-timing-function: ease-in-out;
-animation-fill-mode: both;
-}
-.animated-border-right{
-animation-delay: 1s;
-animation-duration: 1s;
-animation-timing-function: ease-in-out;
-animation-fill-mode: both;
-}
-.animated-border-bottom{
-animation-delay: 1s;
-animation-duration: 2s;
-animation-timing-function: ease-in-out;
-animation-fill-mode: both;
-}
-.animated-border-left{
-animation-delay: 1s;
-animation-duration: 3s;
-animation-timing-function: ease-in-out;
-animation-fill-mode: both;
-}
-.whidth-border{
-    -webkit-animation-name: lineWidth;
-     animation-name: lineWidth;
-}
-.height-border{
-    -webkit-animation-name: lineHeight;
-     animation-name: lineHeight;
-}
-.whidth-border-2{
-    -webkit-animation-name: lineWidth-2;
-     animation-name: lineWidth-2;
-}
-.height-border-2{
-    -webkit-animation-name: lineHeight-2;
-     animation-name: lineHeight-2;
+.animated-border-bottom {
+  animation-delay: .26s;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 
+.animated-border-left {
+  animation-delay: .28s;
+  animation-duration: .75s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
 
-@-webkit-keyframes lineWidth { to { width: 367px; } }
-   @-moz-keyframes lineWidth { to { width: 367px; } }
-     @-o-keyframes lineWidth { to { width: 367px; } }   
-        @keyframes lineWidth { to { width: 367px; } }
-@-webkit-keyframes lineHeight { to { height: 249px; } }
-   @-moz-keyframes lineHeight { to { height: 249px; } }
-     @-o-keyframes lineHeight { to { height: 249px; } }   
-        @keyframes lineHeight { to { height: 249px; } }
+.whidth-border {
+  -webkit-animation-name: lineWidth;
+  animation-name: lineWidth;
+}
 
-        @-webkit-keyframes lineWidth-2 { to { width: 377px; } }
-   @-moz-keyframes lineWidth-2 { to { width: 377px; } }
-     @-o-keyframes lineWidth-2 { to { width: 377px; } }   
-        @keyframes lineWidth-2 { to { width: 377px; } }
-@-webkit-keyframes lineHeight-2 { to { height: 211px; } }
-        @keyframes lineHeight-2 { to { height: 211px; } }
-   @-moz-keyframes lineHeight-2 { to { height: 211px; } }
-     @-o-keyframes lineHeight-2 { to { height: 211px; } }   
+.height-border {
+  -webkit-animation-name: lineHeight;
+  animation-name: lineHeight;
+}
+
+.whidth-border-2 {
+  -webkit-animation-name: lineWidth-2;
+  animation-name: lineWidth-2;
+}
+
+.height-border-2 {
+  -webkit-animation-name: lineHeight-2;
+  animation-name: lineHeight-2;
+}
+.whidth-border-3 {
+  -webkit-animation-name: lineWidth-3;
+  animation-name: lineWidth-3;
+}
+
+.height-border-3 {
+  -webkit-animation-name: lineHeight-3;
+  animation-name: lineHeight-3;
+}
+
+@-webkit-keyframes lineWidth {
+  to {width: 367px;}}
+
+@-moz-keyframes lineWidth {
+  to {width: 367px;}}
+
+@-o-keyframes lineWidth {
+  to {width: 367px;}}
+
+@keyframes lineWidth {
+  to {width: 367px;}}
+
+@-webkit-keyframes lineHeight {
+  to {height: 249px;}}
+
+@-moz-keyframes lineHeight {
+  to {height: 249px;}}
+
+@-o-keyframes lineHeight {
+  to {height: 249px;}}
+
+@keyframes lineHeight {
+  to {height: 249px;}}
+
+@-webkit-keyframes lineWidth-2 {
+  to {width: 377px;}}
+
+@-moz-keyframes lineWidth-2 {
+  to {width: 377px;}}
+
+@-o-keyframes lineWidth-2 {
+  to {width: 377px;}}
+
+@keyframes lineWidth-2 {
+  to {width: 377px;}}
+
+@-webkit-keyframes lineHeight-2 {
+  to {height: 211px;}}
+
+@keyframes lineHeight-2 {
+  to {height: 211px;}}
+
+@-moz-keyframes lineHeight-2 {
+  to {height: 211px;}}
+
+@-o-keyframes lineHeight-2 {
+  to {height: 211px;}}
+
+
+  @-webkit-keyframes lineWidth-3 {
+  to {width: 390px;}}
+
+@-moz-keyframes lineWidth-3 {
+  to {width: 390px;}}
+
+@-o-keyframes lineWidth-3 {
+  to {width: 390px;}}
+
+@keyframes lineWidth-3 {
+  to {width: 390px;}}
+
+@-webkit-keyframes lineHeight- {
+  to {height: 413px;}}
+
+@keyframes lineHeight-3 {
+  to {height: 413px;}}
+
+@-moz-keyframes lineHeight-3 {
+  to {height: 413px;}}
+
+@-o-keyframes lineHeight-3 {
+  to {height: 413px;}}
+
