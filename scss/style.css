@@ -45,6 +45,39 @@
   width: 40px;
   height: 52px; }
 
+/*Sprite for icon*/
+.facebook-icon, .facebook-icon-menu, .youtube-icon-menu, .youtube-icon, .close-icon {
+  display: inline-block;
+  background: url("../img/sprite-icon.png") no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left; }
+
+.facebook-icon {
+  background-position: -3px -0px;
+  width: 38px;
+  height: 38px; }
+
+.facebook-icon-menu {
+  background-position: -3px -41px;
+  width: 38px;
+  height: 38px; }
+
+.youtube-icon-menu {
+  background-position: -3px -82px;
+  width: 38px;
+  height: 38px; }
+
+.youtube-icon {
+  background-position: -3px -123px;
+  width: 38px;
+  height: 38px; }
+
+.close-icon {
+  background-position: -3px -164px;
+  width: 29px;
+  height: 28px; }
+
 * {
   box-sizing: border-box; }
 
@@ -516,6 +549,68 @@ header:after {
       width: 120px; }
   .container .block-contacts {
     display: none; }
+    .container .block-contacts h2 {
+      font-family: bebas-neue-reg, suns-serif;
+      font-size: 36px;
+      text-transform: uppercase;
+      font-weight: normal;
+      text-align: center; }
+    .container .block-contacts p {
+      font-family: bebas-neue-reg, suns-serif;
+      font-size: 26px;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .container .block-contacts .contacts {
+      width: 360px;
+      height: 360px;
+      float: left;
+      margin-left: 180px; }
+      .container .block-contacts .contacts p {
+        margin-left: 40px; }
+      .container .block-contacts .contacts table {
+        font-family: MyriadProRegular, suns-serif;
+        font-size: 14px;
+        border-spacing: 40px; }
+      .container .block-contacts .contacts a:nth-child(2) {
+        display: inline-block;
+        margin-left: 10px; }
+    .container .block-contacts form {
+      width: 360px;
+      height: 360px;
+      float: right;
+      margin-right: 38px; }
+      .container .block-contacts form input {
+        display: block;
+        width: 238px;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid black;
+        font-family: bebas-neue-reg, suns-serif;
+        font-size: 16px;
+        color: black;
+        outline: none;
+        vertical-align: bottom; }
+      .container .block-contacts form input::-webkit-input-placeholder {
+        color: black;
+        vertical-align: bottom; }
+      .container .block-contacts form input::-moz-placeholder {
+        color: black;
+        vertical-align: bottom; }
+      .container .block-contacts form input:nth-child(4) {
+        width: 238px;
+        height: 82px;
+        border: none;
+        border-bottom: 1px solid black; }
+      .container .block-contacts form button {
+        width: 238px;
+        height: 30px;
+        background: #e52d44;
+        outline: none;
+        border: none;
+        color: white;
+        font-family: bebas-neue-reg, suns-serif;
+        font-size: 14px;
+        margin-top: 36px; }
 
 .show {
   display: block !important; }
